@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1, h2 {
+    color: #4b2e2e;
+    text-align: center;
+  }
+  
+  section {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+  }
+  
+  form, .filters, .sugestoes-box {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ddd;
+  }
+  
+  input, select, button {
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1em;
+  }
+  
+  button {
+    background-color: #4b2e2e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #6a3a3a;
+  }
+  
+  #limparEstoqueBtn {
+    margin-top: 10px;
+    background-color: crimson;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #revelarBtn {
+    width: 100%;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  ul#estoqueList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul#estoqueList li {
+    list-style: none;
+    background-color: #fff;
+    border-left: 5px solid #4b2e2e;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+  }
+  
+  ul#estoqueList li:hover {
+    transform: scale(1.01);
+    background-color: #fdf9f6;
+  }
+  
+  ul#estoqueList button {
+    margin-top: 10px;
+    width: auto;
+    padding: 6px 12px;
+    font-size: 0.9em;
+  }
+  
+  .sugestoes-box {
+    background-color: #fff3e0;
+    border-left: 6px solid #ff9800;
+    font-weight: bold;
+    color: #5d4037;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .sugestoes-box strong {
+    color: #3e2723;
+  }
+  
+  .filters label.filtro-validade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .checkbox-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  
+  .checkbox-item input[type="checkbox"] {
+    margin-left: 10px;
+    transform: scale(1.2);
+  }
+  
+  @media screen and (max-width: 768px) {
+    input, select, button {
+      padding: 12px;
+      font-size: 1em;
+    }
+  
+    ul#estoqueList {
+      gap: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    body {
+      padding: 10px;
+    }
+  
+    input, select, button {
+      font-size: 0.95em;
+      padding: 10px;
+    }
+  
+    ul#estoqueList li {
+      font-size: 0.9em;
+    }
+  }
+  

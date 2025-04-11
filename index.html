@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Estoque de Café Gourmet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Estoque de Café Gourmet</h1>
+
+  <section class="form-section">
+    <h2>Adicionar Lote</h2>
+    <form id="addForm">
+      <input type="text" id="nome" placeholder="Nome do Café" required />
+      <input type="text" id="origem" placeholder="Origem" required />
+      <input type="date" id="validade" required />
+
+      <!-- CHECKBOXES -->
+      <div class="checkbox-group">
+        <label class="checkbox-item">
+          Kit Promocional
+          <input type="checkbox" id="kit" />
+        </label>
+        <label class="checkbox-item">
+          Amostra Grátis
+          <input type="checkbox" id="amostra" />
+        </label>
+      </div>
+
+      <button type="submit">Adicionar</button>
+    </form>
+  </section>
+
+  <section class="filters">
+    <h2>Filtros</h2>
+    <label class="filtro-validade">
+      Válidos até hoje
+      <input type="checkbox" id="filtroValidade" />
+    </label>
+  </section>
+
+  <section>
+    <h2>Estoque</h2>
+    <ul id="estoqueList"></ul>
+  </section>  
+    
+  <button id="limparEstoqueBtn" style="display: none;">
+    🗑️ Limpar Estoque
+  </button>
+
+  <div id="revelarBtn"></div>
+
+  <section>
+    <h2>Sugestões</h2>
+    <div id="sugestoes"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
